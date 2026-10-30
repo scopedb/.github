@@ -20,41 +20,24 @@
   <a href="https://www.scopedb.io/blog"><strong>Blog</strong></a>
 </p>
 
----
-
 ### ScopeDB Cloud
 
-A serverless database built on object storage for high-volume application events, logs, traces, and product analytics.
+ScopeDB is a serverless database built on object storage for high-volume application events, logs, traces, and product analytics. It ingests semi-structured events and OpenTelemetry signals directly without ETL pipelines, and queries them in real time with [ScopeQL](https://www.scopedb.io/docs/reference) on elastic, isolated compute.
 
-- **Direct Event Ingestion**: Land semi-structured events, `any` payloads, and OpenTelemetry signals straight into tables without fragile ETL pipelines.
-- **Pipelined Queries with [ScopeQL](https://www.scopedb.io/docs/reference)**: Filter, aggregate, and join relational columns alongside nested paths in a linear, composable query flow.
-- **Elastic Object Storage Engine**: Store petabytes on cloud object storage and scale isolated compute nodes on demand for ingestion, compaction, and interactive queries.
-- **Agent-Native Workflow**: Connect coding agents to inspect schemas, run read-only diagnostic queries, and generate interactive charts directly from your workspace.
-
-Get started with the [ScopeDB Agent Skill](https://github.com/scopedb/scopedb-skills) in Claude Code, Codex, or Cursor:
+Create a free workspace in [ScopeDB Console](https://console.scopedb.cloud/?signup), or connect Claude Code, Codex, or Cursor with the [ScopeDB Agent Skill](https://github.com/scopedb/scopedb-skills):
 
 ```sh
 npx skills add scopedb/scopedb-skills --copy
 ```
 
-Or explore ScopeDB directly:
-
-- [ScopeDB Console](https://console.scopedb.cloud/?signup): Create a free serverless workspace and try sample event data in seconds.
-- [Start with Your Agent](https://www.scopedb.io/agent): Hand a single onboarding prompt to your AI coding agent.
-- [Quickstart Guide](https://www.scopedb.io/docs/guides/quickstart): Ingest your first events and run real-time queries.
-
 ### Open Source
 
-| Project                                                     | Description                                                   |
-| ----------------------------------------------------------- | ------------------------------------------------------------- |
-| [scopedb-skills](https://github.com/scopedb/scopedb-skills) | Agent skill to query ScopeDB from Claude Code, Codex, Cursor  |
-| [scopedb-cli](https://github.com/scopedb/scopedb-cli)       | Interactive and scripted `scope` CLI for the terminal         |
-| [scopedb-js](https://github.com/scopedb/scopedb-js)         | JavaScript and TypeScript SDK                                 |
-| [goscopedb](https://github.com/scopedb/goscopedb)           | Go SDK                                                        |
-| [scopedb-client](https://github.com/scopedb/scopedb-client) | Rust SDK                                                      |
-| [telescope](https://github.com/scopedb/telescope)           | OpenTelemetry Collector for logs, traces, and metrics         |
-| [scopeview](https://github.com/scopedb/scopeview)           | Canvas chart library and CLI for metrics and trace waterfalls |
+- **Client SDKs**: [JavaScript / TypeScript](https://github.com/scopedb/scopedb-js), [Go](https://github.com/scopedb/goscopedb), [Rust](https://github.com/scopedb/scopedb-client)
+- **Tools**: [scopedb-skills](https://github.com/scopedb/scopedb-skills) (AI agent skill), [scopedb-cli](https://github.com/scopedb/scopedb-cli) (`scope` CLI), [scopeview](https://github.com/scopedb/scopeview) (metrics and trace waterfall charts)
+- **Integrations**: [telescope](https://github.com/scopedb/telescope) (OpenTelemetry Collector for logs, traces, and metrics)
 
 ### Community
 
-Join the ScopeDB community to ask questions, share feedback, and stay updated on [Discord](https://discord.gg/AynEZfqFvM), [X (@scopedbio)](https://twitter.com/scopedbio), or [contact@scopedb.io](mailto:contact@scopedb.io).
+<p>
+  <a href="https://discord.gg/AynEZfqFvM"><picture><source media="(prefers-color-scheme: dark)" srcset="/profile/icon-discord-dark.svg"><source media="(prefers-color-scheme: light)" srcset="/profile/icon-discord-light.svg"><img alt="Discord" src="/profile/icon-discord-light.svg" width="32" height="32"></picture></a>&nbsp;&nbsp;<a href="https://twitter.com/scopedbio"><picture><source media="(prefers-color-scheme: dark)" srcset="/profile/icon-x-dark.svg"><source media="(prefers-color-scheme: light)" srcset="/profile/icon-x-light.svg"><img alt="X (@scopedbio)" src="/profile/icon-x-light.svg" width="32" height="32"></picture></a>&nbsp;&nbsp;<a href="mailto:contact@scopedb.io"><picture><source media="(prefers-color-scheme: dark)" srcset="/profile/icon-mail-dark.svg"><source media="(prefers-color-scheme: light)" srcset="/profile/icon-mail-light.svg"><img alt="Email ScopeDB" src="/profile/icon-mail-light.svg" width="32" height="32"></picture></a>
+</p>
