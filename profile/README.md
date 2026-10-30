@@ -1,28 +1,28 @@
-<div align="center">
-  <br />
+<p align="center">
   <a href="https://www.scopedb.io">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="/profile/scopedb-logo-white.svg">
-      <source media="(prefers-color-scheme: light)" srcset="/profile/scopedb-logo-black.svg">
-      <img alt="ScopeDB" src="/profile/scopedb-logo-black.svg" width="260">
+      <source media="(prefers-color-scheme: dark)" srcset="/profile/banner-dark.png">
+      <source media="(prefers-color-scheme: light)" srcset="/profile/banner-light.png">
+      <img alt="ScopeDB — Turn live events into real-time insights." src="/profile/banner-light.png" width="100%">
     </picture>
   </a>
-  <p><strong>Turn live events into real-time insights.</strong></p>
-  <p>
-    <a href="https://www.scopedb.io">Website</a>
-    <span>&nbsp;·&nbsp;</span>
-    <a href="https://console.scopedb.cloud">Cloud Console</a>
-    <span>&nbsp;·&nbsp;</span>
-    <a href="https://www.scopedb.io/agent">Start with Your Agent</a>
-    <span>&nbsp;·&nbsp;</span>
-    <a href="https://www.scopedb.io/docs">Docs</a>
-    <span>&nbsp;·&nbsp;</span>
-    <a href="https://www.scopedb.io/blog">Blog</a>
-  </p>
-  <hr />
-</div>
+</p>
 
-ScopeDB is a serverless database built on object storage to store, search, and analyze live events in real time. Write structured columns and evolving `object` payloads directly from application backends, OpenTelemetry collectors, or AI agents without ETL, and query them with [ScopeQL](https://www.scopedb.io/docs/reference):
+<p align="center">
+  <a href="https://www.scopedb.io"><strong>Website</strong></a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="https://console.scopedb.cloud/?signup"><strong>Start Free</strong></a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="https://www.scopedb.io/agent"><strong>Start with Your Agent</strong></a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="https://www.scopedb.io/docs"><strong>Docs</strong></a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="https://www.scopedb.io/blog"><strong>Blog</strong></a>
+</p>
+
+---
+
+Write structured columns alongside evolving `object` payloads directly from your application, OpenTelemetry collector, or AI agent — without an intermediate ETL pipeline — and investigate live events in real time with **[ScopeQL](https://www.scopedb.io/docs/reference)**:
 
 ```sql
 FROM payment_requests
@@ -34,6 +34,9 @@ SELECT release, gateway, requests, failures,
 ORDER BY failure_pct DESC
 ```
 
-- **CLI & Agent**: [`scopedb-cli`](https://github.com/scopedb/scopedb-cli) (`scope`) · [`scopedb-skills`](https://github.com/scopedb/scopedb-skills)
-- **Client SDKs**: [JavaScript / TypeScript](https://github.com/scopedb/scopedb-js) · [Go](https://github.com/scopedb/goscopedb) · [Rust](https://github.com/scopedb/scopedb-client)
-- **Ecosystem**: [Telescope](https://github.com/scopedb/telescope) (OpenTelemetry Collector) · [ScopeView](https://github.com/scopedb/scopeview) (Charts & Traces)
+We maintain the following open-source projects around ScopeDB:
+
+- **[scopedb-skills](https://github.com/scopedb/scopedb-skills)** & **[scopedb-cli](https://github.com/scopedb/scopedb-cli)** — Connect your AI agent ([Claude Code, Codex, Cursor](https://www.scopedb.io/agent)) or terminal (`scope`) to inspect schemas, run ScopeQL queries, and generate portable HTML reports.
+- **[scopedb-js](https://github.com/scopedb/scopedb-js)** · **[goscopedb](https://github.com/scopedb/goscopedb)** · **[scopedb-client](https://github.com/scopedb/scopedb-client)** — Official TypeScript/JavaScript, Go, and Rust SDKs for high-concurrency event ingestion and querying.
+- **[Telescope](https://github.com/scopedb/telescope)** — OpenTelemetry Collector distribution that sinks OTLP logs, traces, and metrics directly into ScopeDB tables.
+- **[ScopeView](https://github.com/scopedb/scopeview)** — Zero-dependency Canvas chart library and CLI for time-series metrics, trace waterfalls, and offline interactive charts.
