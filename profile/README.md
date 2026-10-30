@@ -34,10 +34,14 @@ SELECT release, gateway, requests, failures,
 ORDER BY failure_pct DESC
 ```
 
-Open-source tools and SDKs:
+### Open Source
 
-- [ScopeDB Skill](https://github.com/scopedb/scopedb-skills): Let your AI agent query ScopeDB.
-- [ScopeDB CLI](https://github.com/scopedb/scopedb-cli): Run ScopeQL from your terminal.
-- [Telescope](https://github.com/scopedb/telescope): Ingest OpenTelemetry logs, traces, and metrics.
-- [ScopeView](https://github.com/scopedb/scopeview): Render time-series charts and trace waterfalls.
-- Client SDKs for [JavaScript](https://github.com/scopedb/scopedb-js), [Go](https://github.com/scopedb/goscopedb), and [Rust](https://github.com/scopedb/scopedb-client).
+| Project                                                     | Description                                                   |
+| ----------------------------------------------------------- | ------------------------------------------------------------- |
+| [scopedb-skills](https://github.com/scopedb/scopedb-skills) | Agent skill to query ScopeDB from Claude Code, Codex, Cursor  |
+| [scopedb-cli](https://github.com/scopedb/scopedb-cli)       | Interactive and scripted `scope` CLI for the terminal         |
+| [scopedb-js](https://github.com/scopedb/scopedb-js)         | JavaScript and TypeScript SDK                                 |
+| [goscopedb](https://github.com/scopedb/goscopedb)           | Go SDK                                                        |
+| [scopedb-client](https://github.com/scopedb/scopedb-client) | Rust SDK                                                      |
+| [telescope](https://github.com/scopedb/telescope)           | OpenTelemetry Collector for logs, traces, and metrics         |
+| [scopeview](https://github.com/scopedb/scopeview)           | Canvas chart library and CLI for metrics and trace waterfalls |
