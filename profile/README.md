@@ -30,6 +30,11 @@ npx skills add scopedb/scopedb-skills --copy
 
 ### Open Source
 
-- **Client SDKs**: [TypeScript](https://github.com/scopedb/scopedb-js), [Go](https://github.com/scopedb/goscopedb), [Rust](https://github.com/scopedb/scopedb-client)
-- **Tools**: [scopedb-skills](https://github.com/scopedb/scopedb-skills) (AI agent skill), [scopedb-cli](https://github.com/scopedb/scopedb-cli) (`scope` CLI), [scopeview](https://github.com/scopedb/scopeview) (metrics and trace waterfall charts)
-- **Integrations**: [telescope](https://github.com/scopedb/telescope) (OpenTelemetry Collector for logs, traces, and metrics)
+| Project                                                     | Description                                            |
+| ----------------------------------------------------------- | ------------------------------------------------------ |
+| [scopedb-skills](https://github.com/scopedb/scopedb-skills) | AI agent skill for Claude Code, Codex, and Cursor      |
+| [scopedb-cli](https://github.com/scopedb/scopedb-cli)       | Interactive and scripted `scope` CLI                   |
+| [telescope](https://github.com/scopedb/telescope)           | OpenTelemetry Collector for logs, traces, and metrics  |
+| [scopeview](https://github.com/scopedb/scopeview)           | Chart library and CLI for metrics and trace waterfalls |
+
+Client SDKs are available for [TypeScript](https://github.com/scopedb/scopedb-js), [Go](https://github.com/scopedb/goscopedb), and [Rust](https://github.com/scopedb/scopedb-client).
