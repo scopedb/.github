@@ -3,7 +3,7 @@
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="/profile/banner-dark.png">
       <source media="(prefers-color-scheme: light)" srcset="/profile/banner-light.png">
-      <img alt="ScopeDB — Turn live events into real-time insights." src="/profile/banner-light.png" width="100%">
+      <img alt="ScopeDB: Turn live events into real-time insights." src="/profile/banner-light.png" width="100%">
     </picture>
   </a>
 </p>
@@ -22,7 +22,7 @@
 
 ---
 
-Write structured columns alongside evolving `object` payloads directly from your application, OpenTelemetry collector, or AI agent — without an intermediate ETL pipeline — and investigate live events in real time with **[ScopeQL](https://www.scopedb.io/docs/reference)**:
+Send application events, logs, and traces directly to ScopeDB and query them in real time with [ScopeQL](https://www.scopedb.io/docs/reference):
 
 ```sql
 FROM payment_requests
@@ -34,9 +34,10 @@ SELECT release, gateway, requests, failures,
 ORDER BY failure_pct DESC
 ```
 
-We maintain the following open-source projects around ScopeDB:
+Open-source tools and SDKs:
 
-- **[scopedb-skills](https://github.com/scopedb/scopedb-skills)** & **[scopedb-cli](https://github.com/scopedb/scopedb-cli)** — Connect your AI agent ([Claude Code, Codex, Cursor](https://www.scopedb.io/agent)) or terminal (`scope`) to inspect schemas, run ScopeQL queries, and generate portable HTML reports.
-- **[scopedb-js](https://github.com/scopedb/scopedb-js)** · **[goscopedb](https://github.com/scopedb/goscopedb)** · **[scopedb-client](https://github.com/scopedb/scopedb-client)** — Official TypeScript/JavaScript, Go, and Rust SDKs for high-concurrency event ingestion and querying.
-- **[Telescope](https://github.com/scopedb/telescope)** — OpenTelemetry Collector distribution that sinks OTLP logs, traces, and metrics directly into ScopeDB tables.
-- **[ScopeView](https://github.com/scopedb/scopeview)** — Zero-dependency Canvas chart library and CLI for time-series metrics, trace waterfalls, and offline interactive charts.
+- [ScopeDB Skill](https://github.com/scopedb/scopedb-skills): Let your AI agent query ScopeDB.
+- [ScopeDB CLI](https://github.com/scopedb/scopedb-cli): Run ScopeQL from your terminal.
+- [Telescope](https://github.com/scopedb/telescope): Ingest OpenTelemetry logs, traces, and metrics.
+- [ScopeView](https://github.com/scopedb/scopeview): Render time-series charts and trace waterfalls.
+- Client SDKs for [JavaScript](https://github.com/scopedb/scopedb-js), [Go](https://github.com/scopedb/goscopedb), and [Rust](https://github.com/scopedb/scopedb-client).
